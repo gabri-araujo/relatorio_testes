@@ -24,7 +24,7 @@ Nome: sem preencher <br>
 E-mail: sem preencher <br>
 CPF: sem preencher <br>
 Data de filiação: sem preencher <br><br>
-3. Resultados esperados:
+2. Resultados esperados:
 - o sistema não deverá aceitar o cadastro sem o preenchimento dos campos;
 - sem mudanças no banco de dados.
 
@@ -37,7 +37,7 @@ Status final: <br>
 1. Etapas: <br>
 - Associado já cadastrado no sistema;
 - Utilizar os mesmos dados de CPF e e-mail do associado já criado.
-3. Resultados esperados:
+2. Resultados esperados:
 - o sistema não deverá aceitar o cadastro com duplicidade de CPF e e-mail.
 
 Status final: <br>
@@ -51,7 +51,7 @@ Status final: <br>
 - testar com mais de 11 dígitos;
 - testar com caracteres especiais (@#$%&*);
 - testar com letras.
-3. Resultado esperado:
+2. Resultado esperado:
 - o sistema não deverá aceitar o cadastro.
 
 Status final: <br>
@@ -62,7 +62,7 @@ Status final: <br>
 - Descrição: validação do campo data de filiação diferente de anterior ou dia atual. <br>
 1. Etapa: <br>
 - acrescentar um dia a mais em relação ao dia da execução desse caso de teste.
-3. Resultado esperado:
+2. Resultado esperado:
 - o sistema não deverá aceitar o cadastro de dataposterior.
 
 Status final: <br>
