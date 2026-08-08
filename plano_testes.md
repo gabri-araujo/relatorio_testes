@@ -84,30 +84,58 @@ Valor: 150 <br>
 ## CASO DE TESTE 7 - EDIÇÃO DO VALOR
 
 - Descrição: validação da edição pelo gerente. <br>
-1. Etapas <br>
+1. Etapas: <br>
 - Entrar na edição de um ano já cadastrado <br>
 - Editar o valor para o ano em questão <br>
 2. Resultados esperados:
 - deverá retornar uma mensagem  de sucesso;
 - no banco de dados o registro para o ano em questão deverá ser atualizado com o novo valor preenchido.
 
+## CASO DE TESTE 8 - CADASTRO DE ANUIDADE PARA ANO EXISTENTE
 
+- Descrição: validação do cadastro de anuidade para um ano já existente no sistema. <br>
+1. Etapas: <br>
+- Realizar o cadastro de anuidade para um ano já existente, exemplo: 2020 <br>
+2. Resultados esperados:
+- deverá retornar uma mensagem  de erro pois não poderá cadastrar um ano de exercício que já existe;
+- para uma atualização do valor deverá usar a edição do ano em questão.
 
+## CASO DE TESTE 9 - CADASTRO DE VALORES NEGATIVOS
 
-
-
-
-
-
-
-
-
-
-
-
-
+- Descrição: validação do cadastro de valores e ano com o sinal de negativo (-). <br>
+1. Etapas: <br>
+- Seguir o fluxo de cadastro de ano e valor;
+- Usar o símbolo de negativo (-) em ambos os campos. <br>
+2. Resultados esperados:
+- deverá retornar uma mensagem  de erro pois não poderá aceitar dados negativos para esse fluxo.
 
 ## Módulo Cobrança das anuidades do associado
+## CASO DE TESTE 10 - ASSOCIADO FILIADO NO INÍCIO DO ANO ATUAL (2026)
+
+- Descrição: validação do reconhecimento do ano corrente para afiliado que entrou no sistema no início do ano de 2026. <br>
+1. Etapas: <br>
+Associado: X <br>
+Data de filiação: 01/01/2026 <br>
+2. Resultado esperado:
+- o sistema deverá reconhecer o ano corrente para anuidade somente de 2026.
+
+## CASO DE TESTE 11 - ASSOCIADO FILIADO NO ANO PASSADO (2025)
+
+- Descrição: validação do reconhecimento do ano corrente para afiliado que entrou no sistema no meio do ano de 2025. <br>
+1. Etapas: <br>
+Associado: Y <br>
+Data de filiação: 10/07/2025 <br>
+2. Resultado esperado:
+- o sistema deverá reconhecer os anos de 2025 e 2026 para as anuidades.
+
+## CASO DE TESTE 12 - ASSOCIADO FILIADO RECENTEMENTE
+
+- Descrição: validação do reconhecimento do ano corrente para afiliado que entrou no sistema no meio do ano de 2025. <br>
+1. Etapas: <br>
+Associado: z <br>
+Data de filiação: 08/08/2026 <br>
+2. Resultado esperado:
+- o sistema deverá reconhecer o ano de 2026 para a anuidade mas deve considerar um exercício em atraso 90 dias após a data de filiação.
 
 ## Módulo "Pagamento" da anuidade de um associado
 
