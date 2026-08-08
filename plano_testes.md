@@ -81,6 +81,10 @@ Valor: 150 <br>
 - deverá retornar uma mensagem  de sucesso;
 - no banco de dados o registro da anuidade deverá ser criada com sucesso.
 
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
 ## CASO DE TESTE 7 - EDIÇÃO DO VALOR
 
 - Descrição: validação da edição pelo gerente. <br>
@@ -91,6 +95,10 @@ Valor: 150 <br>
 - deverá retornar uma mensagem  de sucesso;
 - no banco de dados o registro para o ano em questão deverá ser atualizado com o novo valor preenchido.
 
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
 ## CASO DE TESTE 8 - CADASTRO DE ANUIDADE PARA ANO EXISTENTE
 
 - Descrição: validação do cadastro de anuidade para um ano já existente no sistema. <br>
@@ -100,6 +108,10 @@ Valor: 150 <br>
 - deverá retornar uma mensagem  de erro pois não poderá cadastrar um ano de exercício que já existe;
 - para uma atualização do valor deverá usar a edição do ano em questão.
 
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
 ## CASO DE TESTE 9 - CADASTRO DE VALORES NEGATIVOS
 
 - Descrição: validação do cadastro de valores e ano com o sinal de negativo (-). <br>
@@ -108,6 +120,10 @@ Valor: 150 <br>
 - Usar o símbolo de negativo (-) em ambos os campos. <br>
 2. Resultados esperados:
 - deverá retornar uma mensagem  de erro pois não poderá aceitar dados negativos para esse fluxo.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
 
 ## Módulo Cobrança das anuidades do associado
 ## CASO DE TESTE 10 - ASSOCIADO FILIADO NO INÍCIO DO ANO ATUAL (2026)
@@ -119,6 +135,10 @@ Data de filiação: 01/01/2026 <br>
 2. Resultado esperado:
 - o sistema deverá reconhecer o ano corrente para anuidade somente de 2026.
 
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
 ## CASO DE TESTE 11 - ASSOCIADO FILIADO NO ANO PASSADO (2025)
 
 - Descrição: validação do reconhecimento do ano corrente para afiliado que entrou no sistema no meio do ano de 2025. <br>
@@ -127,6 +147,10 @@ Associado: Y <br>
 Data de filiação: 10/07/2025 <br>
 2. Resultado esperado:
 - o sistema deverá reconhecer os anos de 2025 e 2026 para as anuidades.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
 
 ## CASO DE TESTE 12 - ASSOCIADO FILIADO RECENTEMENTE
 
@@ -137,6 +161,119 @@ Data de filiação: 08/08/2026 <br>
 2. Resultado esperado:
 - o sistema deverá reconhecer o ano de 2026 para a anuidade mas deve considerar um exercício em atraso 90 dias após a data de filiação.
 
-## Módulo "Pagamento" da anuidade de um associado
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
 
-## Estrutura do Banco de Dados
+## Módulo "Pagamento"/"Checkout"
+## CASO DE TESTE 13 - COBRANÇA UM DIA ANTES DO VENCIMENTO DA ANUIDADE
+
+- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia após o atual. <br>
+1. Etapas: <br>
+Criar ou editar um vencimento para 07/08/2026 <br>
+Data atual no exemplo: 06/08/2026 <br>
+2. Resultados esperados:
+- não deverá considerar a anuidade como vencida;
+- não haverá cobrança de juros;
+- sem categorizar o associado como inadimplente.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 14 - COBRANÇA UM DIA ANTES DO VENCIMENTO DA ANUIDADE
+
+- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia após o atual. <br>
+1. Etapas: <br>
+Criar ou editar um vencimento para 07/08/2026 <br>
+Data atual no exemplo: 06/08/2026 <br>
+2. Resultados esperados:
+- não deverá considerar a anuidade como vencida;
+- não haverá cobrança de juros;
+- sem categorizar o associado como inadimplente.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 15 - COBRANÇA NO DIA DO VENCIMENTO DA ANUIDADE
+
+- Descrição: validação do comportamento da cobrança seja no dia do vencimento. <br>
+1. Etapas: <br>
+Criar ou editar um vencimento para 07/08/2026 <br>
+Data atual no exemplo: 07/08/2026 <br>
+2. Resultados esperados:
+- não deverá considerar a anuidade como vencida;
+- não haverá cobrança de juros;
+- sem categorizar o associado como inadimplente.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 17 - COBRANÇA UM DIA APÓS O VENCIMENTO DA ANUIDADE
+
+- Descrição: validação do comportamento da cobrança caso ela seja após o dia do vencimento. <br>
+1. Etapas: <br>
+Criar ou editar um vencimento para 05/08/2026 <br>
+Data atual no exemplo: 06/08/2026 <br>
+2. Resultados esperados:
+- deverá considerar a anuidade como vencida;
+- haverá cobrança de juros;
+- categorizar o associado como inadimplente.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 18 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE SEM ATRASO
+
+- Descrição: validação do comportamento da cobrança dos juros caso ela não esteja em atraso. <br>
+1. Etapa: <br>
+Criar ou editar um associado sem anuidade em atraso <br>
+2. Resultados esperados:
+- deverá considerar somente a anuidade;
+- não haverá cobrança de juros;
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 19 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM UM MÊS DE ATRASO
+
+- Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 1 mês. <br>
+1. Etapa: <br>
+Criar ou editar um associado com anuidade em atraso por 1 mês (anuidade a R$100,00). <br>
+2. Resultados esperados:
+- deverá considerar a anuidade vigente;
+- haverá cobrança de juros de R$1,00;
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 20 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
+
+- Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 5 meses (anuidade a R$100,00). <br>
+1. Etapa: <br>
+Criar ou editar um associado com anuidade em atraso por 5 meses. <br>
+2. Resultados esperados:
+- deverá considerar a anuidade vigente;
+- haverá cobrança de juros de R$5,00;
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 21 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
+
+- Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 5 meses. <br>
+1. Etapa: <br>
+Criar ou editar um associado com anuidade em atraso por 5 meses. <br>
+2. Resultados esperados:
+- deverá considerar a anuidade vigente;
+- haverá cobrança de juros de R$5,00;
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
