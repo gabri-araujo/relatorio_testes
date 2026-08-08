@@ -10,8 +10,8 @@ E-mail: joaosilvaoliveira@gmail.com <br>
 CPF: 12345678910 <br>
 Data de filiação: 08/08/2000 <br><br>
 2. Resultados esperados:
-- deverá retornar uma mensagem  de sucesso
-- no banco de dados o registro do associado deverá ser criado com sucesso
+- deverá retornar uma mensagem  de sucesso;
+- no banco de dados o registro do associado deverá ser criado com sucesso.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
@@ -25,13 +25,12 @@ E-mail: sem preencher <br>
 CPF: sem preencher <br>
 Data de filiação: sem preencher <br><br>
 3. Resultados esperados:
-- o sistema não deverá aceitar o cadastro sem o preenchimento dos campos
-- sem mudanças no banco de dados
+- o sistema não deverá aceitar o cadastro sem o preenchimento dos campos;
+- sem mudanças no banco de dados.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
-
 
 ## CASO DE TESTE 3 - DUPLICIDADE DOS CAMPOS
 - Descrição: validação da duplicidade dos campos na hora do cadastro. <br>
@@ -39,7 +38,7 @@ Status final: <br>
 - Associado já cadastrado no sistema;
 - Utilizar os mesmos dados de CPF e e-mail do associado já criado.
 3. Resultados esperados:
-- o sistema não deverá aceitar o cadastro com duplicidade de CPF e e-mail;
+- o sistema não deverá aceitar o cadastro com duplicidade de CPF e e-mail.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
@@ -53,7 +52,7 @@ Status final: <br>
 - testar com caracteres especiais (@#$%&*);
 - testar com letras.
 3. Resultado esperado:
-- o sistema não deverá aceitar o cadastro;
+- o sistema não deverá aceitar o cadastro.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
@@ -61,10 +60,10 @@ Status final: <br>
 
 ## CASO DE TESTE 5 - DATA DE FILIAÇÃO POSTERIOR
 - Descrição: validação do campo data de filiação diferente de anterior ou dia atual. <br>
-1. Etapas: <br>
+1. Etapa: <br>
 - acrescentar um dia a mais em relação ao dia da execução desse caso de teste.
 3. Resultado esperado:
-- o sistema não deverá aceitar o cadastro de dataposterior;
+- o sistema não deverá aceitar o cadastro de dataposterior.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
@@ -156,7 +155,7 @@ Status final: <br>
 
 - Descrição: validação do reconhecimento do ano corrente para afiliado que entrou no sistema no meio do ano de 2025. <br>
 1. Etapas: <br>
-Associado: z <br>
+Associado: Z <br>
 Data de filiação: 08/08/2026 <br>
 2. Resultado esperado:
 - o sistema deverá reconhecer o ano de 2026 para a anuidade mas deve considerar um exercício em atraso 90 dias após a data de filiação.
@@ -166,7 +165,7 @@ Status final: <br>
 ❌NÃO APROVADO
 
 ## Módulo "Pagamento"/"Checkout"
-## CASO DE TESTE 13 - COBRANÇA UM DIA ANTES DO VENCIMENTO DA ANUIDADE
+## CASO DE TESTE 13 - COBRANÇA UM DIA APÓS DO VENCIMENTO DA ANUIDADE
 
 - Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia após o atual. <br>
 1. Etapas: <br>
@@ -183,14 +182,14 @@ Status final: <br>
 
 ## CASO DE TESTE 14 - COBRANÇA UM DIA ANTES DO VENCIMENTO DA ANUIDADE
 
-- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia após o atual. <br>
+- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia anos o atual. <br>
 1. Etapas: <br>
-Criar ou editar um vencimento para 07/08/2026 <br>
-Data atual no exemplo: 06/08/2026 <br>
+Criar ou editar um vencimento para 06/08/2026 <br>
+Data atual no exemplo: 07/08/2026 <br>
 2. Resultados esperados:
-- não deverá considerar a anuidade como vencida;
-- não haverá cobrança de juros;
-- sem categorizar o associado como inadimplente.
+- deverá considerar a anuidade como vencida;
+- haverá cobrança de juros;
+- categorizar o associado como inadimplente.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
@@ -211,68 +210,83 @@ Status final: <br>
 ✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
 
-## CASO DE TESTE 17 - COBRANÇA UM DIA APÓS O VENCIMENTO DA ANUIDADE
-
-- Descrição: validação do comportamento da cobrança caso ela seja após o dia do vencimento. <br>
-1. Etapas: <br>
-Criar ou editar um vencimento para 05/08/2026 <br>
-Data atual no exemplo: 06/08/2026 <br>
-2. Resultados esperados:
-- deverá considerar a anuidade como vencida;
-- haverá cobrança de juros;
-- categorizar o associado como inadimplente.
-
-Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
-
-## CASO DE TESTE 18 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE SEM ATRASO
+## CASO DE TESTE 16 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE SEM ATRASO
 
 - Descrição: validação do comportamento da cobrança dos juros caso ela não esteja em atraso. <br>
 1. Etapa: <br>
 Criar ou editar um associado sem anuidade em atraso <br>
 2. Resultados esperados:
 - deverá considerar somente a anuidade;
-- não haverá cobrança de juros;
+- não haverá cobrança de juros.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
 
-## CASO DE TESTE 19 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM UM MÊS DE ATRASO
+## CASO DE TESTE 17 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM UM MÊS DE ATRASO
 
 - Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 1 mês. <br>
 1. Etapa: <br>
 Criar ou editar um associado com anuidade em atraso por 1 mês (anuidade a R$100,00). <br>
 2. Resultados esperados:
 - deverá considerar a anuidade vigente;
-- haverá cobrança de juros de R$1,00;
+- deverá discriminar no banco de dados separadamente os valores pagos de anuidade e de juros;
+- haverá cobrança de juros de R$1,00.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
 
-## CASO DE TESTE 20 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
+## CASO DE TESTE 18 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
 
 - Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 5 meses (anuidade a R$100,00). <br>
 1. Etapa: <br>
 Criar ou editar um associado com anuidade em atraso por 5 meses. <br>
 2. Resultados esperados:
 - deverá considerar a anuidade vigente;
-- haverá cobrança de juros de R$5,00;
+- deverá discriminar no banco de dados separadamente os valores pagos de anuidade e de juros;
+- haverá cobrança de juros de R$5,00.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
 
-## CASO DE TESTE 21 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
+## CASO DE TESTE 19 - CONFERÊNCIA DO CHECKOUT DE ASSOCIADO INADIMPLENTE 
 
-- Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 5 meses. <br>
+- Descrição: validação do comportamento do checkout para associado inadimplente que nunca pagou. <br>
 1. Etapa: <br>
-Criar ou editar um associado com anuidade em atraso por 5 meses. <br>
+Criar ou editar um associado com anuidades nunca pagas, por exemplo desde o ano corrente de 2023. <br>
 2. Resultados esperados:
-- deverá considerar a anuidade vigente;
-- haverá cobrança de juros de R$5,00;
+- o checkout deverá retornar as anuidades referentes aos anos 2024, 2025 e 2026;
+- deverá discriminar no banco de dados separadamente os valores pagos de anuidade e de juros;
+- o checkout assim deve retornar o total devido.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 20 - CONFERÊNCIA DO CHECKOUT DE ASSOCIADO COM ANUIDADE PAGA 
+
+- Descrição: validação do comportamento do checkout para associado que pagou uma anuidade. <br>
+1. Etapa: <br>
+Criar ou editar um associado com uma anuidade paga, por exemplo do ano corrente de 2024 estando em 2026. <br>
+2. Resultados esperados:
+- o checkout deverá retornar as anuidades referentes aos anos 2025 e 2026;
+- deverá discriminar no banco de dados separadamente os valores pagos de anuidade e de juros;
+- o checkout assim deve retornar o total devido.
+
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+## CASO DE TESTE 21 - CONFERÊNCIA DO CHECKOUT DE ASSOCIADO COM ANUIDADE PAGA PARCIALMENTE
+
+- Descrição: validação do comportamento do checkout para associado que pagou uma parte da anuidade. <br>
+1. Etapa: <br>
+Criar ou editar um associado com uma anuidade paga parcialmente, por exemplo do ano corrente de 2026. <br>
+2. Resultado esperado:
+- o checkout deverá retornar a pendência do resultado restante devido;
+- deverá discriminar no banco de dados separadamente os valores pagos de anuidade e de juros.
 
 Status final: <br>
 ✅APROVADO <br> ou <br>
