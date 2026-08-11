@@ -326,9 +326,46 @@ Status final: <br>
 
 ------------------------------------------------------------------------------------------------------------
 
+# Extras (módulos não contemplados no plano de teste inicial)
+## Módulo Listagem de associados
+## CASO DE TESTE 1 - CONFERÊNCIA DA LISTAGEM DE ASSOCIADOS
+
+- Descrição: tentativa de filtragem de associados usando os dados já existentes.
+1. Etapa: <br>
+Utilizar algum dado de um associado já cadastrado no sistema.
+2. Resultado esperado:
+- retorno dos dados que correspondem a filtragem.
+
+Status final: <br>
+✅APROVADO
+
+Evidência:
+
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/da38fbd9-04cb-40a9-bc58-713806cfd7de" />
+
+
+
+
+## CASO DE TESTE 2 - CONFERÊNCIA DO FUNCIONAMENTO DOS BOTÕES
+- Descrição: validação do funcionamento dos campos.
+1. Etapas:
+Clicar no botão Filtrar
+Clicar no botão Limpar
+
+Status final: <br>
+❌NÃO APROVADO
+
+Motivo: ao clicar no botão de Limpar retornou um erro 404.
+
+Evidência:
+
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/cd80806c-2892-4c3d-9800-6af3e3a0f87c" />
+
+
+
 # Melhorias
 ## Módulo Cadastro de associados
-Botão de Limpar
+- Adição de um botão de Limpar
 
 
 ## Módulo Cadastro de anuidades
