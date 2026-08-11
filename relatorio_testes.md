@@ -449,11 +449,50 @@ Descrição: validação do retorno dos dados para o fluxo de geração para tod
 
 <img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/f97f6422-49b1-4619-935d-168c20cdd42a" />
 
+## Módulo de Dashboard
+## CASO DE TESTE 4 - CONFERÊNCIA DO RETORNO DOS DADOS RETORNADOS PELO DASHBOARD
+
+Descrição: validação do retorno dos dados do dashboard.
+1. Etapas:
+- abrir o dashboard.
+2. Resultado esperado:
+- todos os dados mostrados nele deverão estar corretos com os seus respectivos módulos de origem.
+
+3. Status final: <br>
+✅APROVADO
+
+4. Evidências:
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/715ecf96-b17d-4178-bd0b-d8c1374a2076" />
+
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/e2b06530-dd7d-4323-82da-283648a0d33a" />
+
+<img width="1919" height="1045" alt="image" src="https://github.com/user-attachments/assets/a2e89ed7-7f2d-46a3-b6b3-26ea2a232781" />
+
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/f11b641b-27f6-4f76-968f-147653a7fc32" />
+
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/9bbf0928-704e-4d0b-8fb2-d46f1585af10" />
+
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/3be5bbd3-6104-4b0e-b91b-5632c6f0e152" />
+
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/f80f4beb-8081-458d-b22e-7f6eda3f372c" />
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/1483985d-00a1-4252-bb8a-57006ca4d955" />
+
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/17ffe281-56ab-4cc7-885f-f13cade566dc" />
+
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/7c65c7ac-3757-400c-9170-d161f6cd901a" />
+
+<img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/f94c0aff-8020-40b4-9f20-e2dba708c7fc" />
+
 ------------------------------------------------------------------------------------------------------------
 
 # Melhorias
 ## Módulo Cadastro de associados
 - Adição de um botão de Limpar.
+
+## Módulo Listagem de associados
+- Adição de um botão de Excluir para os associados.
 
 ## Módulo de Anuidade
 - O horário da coluna Data de Cadastro está incorreta, está a 3 horas a frente do horário atual após criar um registro;
