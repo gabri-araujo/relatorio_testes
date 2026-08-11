@@ -178,8 +178,14 @@ Data de filiação: 01/01/2026 <br>
 - o sistema deverá reconhecer o ano corrente para anuidade somente de 2026.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências:
+
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/e6d54c11-067f-4efb-a9b0-f354630f164d" />
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/a0b1e274-3308-47cc-b057-5fb2d43ba93f" />
+
 
 ## CASO DE TESTE 11 - ASSOCIADO FILIADO NO ANO PASSADO (2025)
 
@@ -191,8 +197,14 @@ Data de filiação: 10/07/2025 <br>
 - o sistema deverá reconhecer os anos de 2025 e 2026 para as anuidades.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências:
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/b20d17f8-ce9b-4a10-a1b1-daa718c1912d" />
+
+<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/8813154e-8f65-44c3-9008-61515cc67c4d" />
+
 
 ## CASO DE TESTE 12 - ASSOCIADO FILIADO RECENTEMENTE
 
@@ -204,8 +216,13 @@ Data de filiação: 08/08/2026 <br>
 - o sistema deverá reconhecer o ano de 2026 para a anuidade mas deve considerar um exercício em atraso 90 dias após a data de filiação.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências:
+
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/fb543912-ef61-449b-8a78-60f708abcf45" />
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d50d6123-2543-48fe-82ad-d15285b6746c" />
 
 ## Módulo "Pagamento"/"Checkout"
 ## CASO DE TESTE 13 - COBRANÇA UM DIA APÓS DO VENCIMENTO DA ANUIDADE
@@ -220,12 +237,20 @@ Data atual no exemplo: 06/08/2026 <br>
 - sem categorizar o associado como inadimplente.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências: 
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/584c15f9-ea56-405f-b48c-8ade1a8e4453" />
+
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/4edbc7fe-c4d7-4efd-bc8c-ac6851f44768" />
+
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/a98065a8-8b61-48b9-8e4e-74934a8c4377" />
+
 
 ## CASO DE TESTE 14 - COBRANÇA UM DIA ANTES DO VENCIMENTO DA ANUIDADE
 
-- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia anos o atual. <br>
+- Descrição: validação do comportamento da cobrança caso a data de vencimento seja um dia antes do atual. <br>
 1. Etapas: <br>
 Criar ou editar um vencimento para 06/08/2026 <br>
 Data atual no exemplo: 07/08/2026 <br>
@@ -235,8 +260,14 @@ Data atual no exemplo: 07/08/2026 <br>
 - categorizar o associado como inadimplente.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências:
+
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/4fad5580-2bb8-46a2-b5bc-8254b53b9e54" />
+
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/94355f94-e8f9-47dc-9f42-89679cab7cc7" />
+
 
 ## CASO DE TESTE 15 - COBRANÇA NO DIA DO VENCIMENTO DA ANUIDADE
 
@@ -250,8 +281,16 @@ Data atual no exemplo: 07/08/2026 <br>
 - sem categorizar o associado como inadimplente.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidências:
+
+<img width="1919" height="1053" alt="image" src="https://github.com/user-attachments/assets/43e792d0-47ba-4d9a-b64c-10a0544fb469" />
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/367620aa-3a03-4fe7-b4ff-0f66549902a8" />
+
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/cd054d86-b440-4ca3-99b6-d26395345d27" />
+
 
 ## CASO DE TESTE 16 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE SEM ATRASO
 
@@ -263,8 +302,12 @@ Criar ou editar um associado sem anuidade em atraso <br>
 - não haverá cobrança de juros.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidência: 
+
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/a98065a8-8b61-48b9-8e4e-74934a8c4377" />
+
 
 ## CASO DE TESTE 17 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM UM MÊS DE ATRASO
 
@@ -337,7 +380,7 @@ Status final: <br>
 
 ------------------------------------------------------------------------------------------------------------
 
-# Extras (módulos não contemplados no plano de teste inicial)
+# Extras (módulos/telas não contempladas no plano de teste inicial)
 ## Módulo Listagem de associados
 ## CASO DE TESTE 1 - CONFERÊNCIA DA LISTAGEM DE ASSOCIADOS
 
@@ -354,10 +397,6 @@ Evidência:
 
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/ea168c43-84d4-402d-b9ee-791a633e27ca" />
 
-
-
-
-
 ## CASO DE TESTE 2 - CONFERÊNCIA DO FUNCIONAMENTO DOS BOTÕES
 - Descrição: validação do funcionamento dos campos.
 1. Etapas: <br> 
@@ -373,7 +412,20 @@ Evidência:
 
 <img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/cd80806c-2892-4c3d-9800-6af3e3a0f87c" />
 
+## Módulo Geração de Cobrança
+## CASO DE TESTE 3 - CONFERÊNCIA DO RETORNO NA GERAÇÃO PARA TODOS OS ASSOCIADOS
+- Descrição: validação do retorno dos dados para o fluxo de geração para todos os associados.
+1. Etapas:
+Clicar em Gerar Para Todos Associados
+Escolher um ano em Ano da Anuidade, ex: 2025
+Data de Vencimento: 12/08/2026
 
+Status final: <br>
+✅APROVADO <br> ou <br>
+❌NÃO APROVADO
+
+
+------------------------------------------------------------------------------------------------------------
 
 # Melhorias
 ## Módulo Cadastro de associados
@@ -386,3 +438,4 @@ Evidência:
 ## Módulo Cobrança das anuidades do associado
 asdasda
 ## Módulo "Pagamento"/"Checkout"
+- Para pagamentos em que o vencimento é igual ao dia atual em questão, acredito que deveria categorizar como em Aberta, não como Vencida. Somente ao virar o dia deveria categorizar como Vencida (após 23:59).
