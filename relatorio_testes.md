@@ -308,7 +308,6 @@ Evidência:
 
 <img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/a98065a8-8b61-48b9-8e4e-74934a8c4377" />
 
-
 ## CASO DE TESTE 17 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM UM MÊS DE ATRASO
 
 - Descrição: validação do comportamento da cobrança dos juros caso ela esteja em atraso por 1 mês. <br>
@@ -320,8 +319,14 @@ Criar ou editar um associado com anuidade em atraso por 1 mês (anuidade a R$100
 - haverá cobrança de juros de R$1,00.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
 ❌NÃO APROVADO
+
+Motivo: não está sendo cobrado juros em anuidades atrasadas.
+
+Evidência:
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0e57a888-aaea-4875-9d02-36791b6255d5" />
+
 
 ## CASO DE TESTE 18 - CONFERÊNCIA DO CÁLCULO DOS JUROS PARA ANUIDADE COM 5 MESES DE ATRASO
 
