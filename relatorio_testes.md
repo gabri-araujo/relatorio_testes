@@ -20,7 +20,6 @@ Evidência:
 
 <img width="1919" height="1047" alt="image" src="https://github.com/user-attachments/assets/7f6fd414-39b5-447c-8d7a-264163ad7fa8" />
 
-
 ## CASO DE TESTE 2 - OBRIGATORIEDADE DOS CAMPOS
 - Descrição: validação da obrigatoriedade dos campos na hora do cadastro. <br>
 1. Dados utilizados: <br>
@@ -45,7 +44,6 @@ Evidência:
 
 <img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/6dafa006-a871-43dc-97b8-a7886b55b8e7" />
 
-
 ## CASO DE TESTE 3 - DUPLICIDADE DOS CAMPOS
 - Descrição: validação da duplicidade dos campos na hora do cadastro. <br>
 1. Etapas: <br>
@@ -60,7 +58,6 @@ Status final: <br>
 Evidência:
 
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/b5305793-2f1c-44fb-8b0b-7fdf5f005921" />
-
 
 ## CASO DE TESTE 4 - FORMATAÇÃO DO CAMPO CPF
 - Descrição: validação formatação (11 dígitos) do campo CPF. <br>
@@ -99,8 +96,6 @@ Evidência:
 
 <img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/3da7c850-eb30-412e-a76f-839829276ca6" />
 
-
-
 ## Módulo Cadastro de anuidades
 ## CASO DE TESTE 6 - CADASTRO DE ANUIDADES PADRÃO
 
@@ -113,8 +108,12 @@ Valor: 150 <br>
 - no banco de dados o registro da anuidade deverá ser criada com sucesso.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidência: 
+
+<img width="1919" height="1049" alt="image" src="https://github.com/user-attachments/assets/ee447afa-38f2-4c91-809a-e1bcb5e309d9" />
+
 
 ## CASO DE TESTE 7 - EDIÇÃO DO VALOR
 
@@ -127,8 +126,12 @@ Status final: <br>
 - no banco de dados o registro para o ano em questão deverá ser atualizado com o novo valor preenchido.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidência: 
+
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/abfad4c3-5035-4a43-bcae-14b23f3e8207" />
+
 
 ## CASO DE TESTE 8 - CADASTRO DE ANUIDADE PARA ANO EXISTENTE
 
@@ -140,8 +143,12 @@ Status final: <br>
 - para uma atualização do valor deverá usar a edição do ano em questão.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidência:
+
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/fea91e13-68bd-4c03-ad56-33bfa86ca7f0" />
+
 
 ## CASO DE TESTE 9 - CADASTRO DE VALORES NEGATIVOS
 
@@ -153,8 +160,12 @@ Status final: <br>
 - deverá retornar uma mensagem  de erro pois não poderá aceitar dados negativos para esse fluxo.
 
 Status final: <br>
-✅APROVADO <br> ou <br>
-❌NÃO APROVADO
+✅APROVADO
+
+Evidência:
+
+<img width="1919" height="1051" alt="image" src="https://github.com/user-attachments/assets/9456022b-8b86-41ac-9851-c427440f3f85" />
+
 
 ## Módulo Cobrança das anuidades do associado
 ## CASO DE TESTE 10 - ASSOCIADO FILIADO NO INÍCIO DO ANO ATUAL (2026)
@@ -341,14 +352,15 @@ Status final: <br>
 
 Evidência:
 
-<img width="1919" height="1052" alt="image" src="https://github.com/user-attachments/assets/da38fbd9-04cb-40a9-bc58-713806cfd7de" />
+<img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/ea168c43-84d4-402d-b9ee-791a633e27ca" />
+
 
 
 
 
 ## CASO DE TESTE 2 - CONFERÊNCIA DO FUNCIONAMENTO DOS BOTÕES
 - Descrição: validação do funcionamento dos campos.
-1. Etapas:
+1. Etapas: <br> 
 Clicar no botão Filtrar
 Clicar no botão Limpar
 
@@ -369,7 +381,8 @@ Evidência:
 
 
 ## Módulo Cadastro de anuidades
-asdadas
+- O horário da coluna data de cadastro  está incorreta, está a 3 horas a frente do horário atual após criar um registro.
+- Ao clicar no botão de Editar seria interessante abrir uma janela popup para edição do valor, pois no fluxo atual ele preenche o campo na tela seguindo o mesmo fluxo de cadastro, podendo deixar o usuário confuso.
 ## Módulo Cobrança das anuidades do associado
 asdasda
 ## Módulo "Pagamento"/"Checkout"
