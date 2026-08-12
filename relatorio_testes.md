@@ -75,7 +75,7 @@ Descrição: validação formatação (11 dígitos) do campo CPF. <br>
 3. Status final: <br>
 ❌NÃO APROVADO
 
-4. Motivo: não aceita caracteres especiais, letras, mais de 11 dígitos mas aceita menos de 11 dígitos
+4. Motivo: não aceita caracteres especiais, letras, mais de 11 dígitos mas aceita menos de 11 dígitos.
 
 5. Evidência:
 
@@ -390,7 +390,7 @@ Descrição: validação do comportamento do checkout para associado que pagou u
 
 # Extras (módulos/telas não contempladas no plano de teste inicial)
 ## Módulo Listagem de associados
-## CASO DE TESTE 1 - CONFERÊNCIA DA LISTAGEM DE ASSOCIADOS
+## CASO DE TESTE 22 - CONFERÊNCIA DA LISTAGEM DE ASSOCIADOS
 
 Descrição: tentativa de filtragem de associados usando os dados já existentes.
 1. Etapa: <br>
@@ -405,7 +405,7 @@ Descrição: tentativa de filtragem de associados usando os dados já existentes
 
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/ea168c43-84d4-402d-b9ee-791a633e27ca" />
 
-## CASO DE TESTE 2 - CONFERÊNCIA DO FUNCIONAMENTO DOS BOTÕES
+## CASO DE TESTE 23 - CONFERÊNCIA DO FUNCIONAMENTO DOS BOTÕES
 
 Descrição: validação do funcionamento dos campos.
 1. Etapas: <br> 
@@ -424,7 +424,7 @@ Descrição: validação do funcionamento dos campos.
 <img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/cd80806c-2892-4c3d-9800-6af3e3a0f87c" />
 
 ## Módulo Geração de Cobrança
-## CASO DE TESTE 3 - CONFERÊNCIA DO RETORNO NA GERAÇÃO PARA TODOS OS ASSOCIADOS
+## CASO DE TESTE 24 - CONFERÊNCIA DO RETORNO NA GERAÇÃO PARA TODOS OS ASSOCIADOS
 
 Descrição: validação do retorno dos dados para o fluxo de geração para todos os associados.
 1. Etapas:
@@ -450,7 +450,7 @@ Descrição: validação do retorno dos dados para o fluxo de geração para tod
 <img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/f97f6422-49b1-4619-935d-168c20cdd42a" />
 
 ## Módulo de Dashboard
-## CASO DE TESTE 4 - CONFERÊNCIA DO RETORNO DOS DADOS RETORNADOS PELO DASHBOARD
+## CASO DE TESTE 25 - CONFERÊNCIA DO RETORNO DOS DADOS RETORNADOS PELO DASHBOARD
 
 Descrição: validação do retorno dos dados do dashboard.
 1. Etapas:
@@ -499,4 +499,15 @@ Descrição: validação do retorno dos dados do dashboard.
 - Ao clicar no botão de Editar seria interessante abrir uma janela popup para edição do valor, pois no fluxo atual ele preenche os campos na tela seguindo o mesmo fluxo de cadastro, podendo deixar o usuário confuso.
 
 ## Módulo "Pagamento"/"Checkout"
-- Para pagamentos em que o vencimento é igual ao dia atual em questão, acredito que deveria categorizar como em Aberta, não como Vencida. Somente ao virar o dia deveria categorizar como Vencida (após 23:59).
+- Para pagamentos em que o vencimento é igual ao dia atual em questão acredito que deveria categorizar como em Aberta, não como Vencida. Somente ao virar o dia deveria categorizar como Vencida (após 23:59).
+
+------------------------------------------------------------------------------------------------------------
+
+# Bugs
+- Casos de Teste:
+1. 4
+2. 5
+3. 17
+4. 18
+5. 19
+6. 23
