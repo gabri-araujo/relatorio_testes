@@ -219,7 +219,8 @@ Descrição: validação do reconhecimento do ano corrente para afiliado que ent
 
 <img width="1919" height="1050" alt="image" src="https://github.com/user-attachments/assets/fb543912-ef61-449b-8a78-60f708abcf45" />
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d50d6123-2543-48fe-82ad-d15285b6746c" />
+<img width="1718" height="940" alt="image" src="https://github.com/user-attachments/assets/c7de6976-d9de-4c81-85d8-e88d13f0cad9" />
+
 
 ## Módulo "Pagamento"/"Checkout"
 ## CASO DE TESTE 13 - COBRANÇA UM DIA APÓS DO VENCIMENTO DA ANUIDADE
